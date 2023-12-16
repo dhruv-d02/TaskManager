@@ -1,10 +1,17 @@
 package com.dhruv.taskmanager;
 
+import android.media.Image;
+
 import java.util.Date;
 
 public class TaskData {
     private String taskTitle, taskDescription;
     private Date taskDate;
+
+    public TaskData(String taskTitle, String taskDescription) {
+        this.taskTitle = taskTitle;
+        this.taskDescription = taskDescription;
+    }
 
     public String getTaskTitle() {
         return taskTitle;
